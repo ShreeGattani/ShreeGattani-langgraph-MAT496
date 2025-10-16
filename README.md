@@ -41,6 +41,12 @@ In this lesson, I learned how the model can smartly decide when to use a tool an
 *My work* - Here i had done a lttle bit of twerking by modifieng my function to a power function which gives power and also did some changes in router.py in studio folder so that it gives me a proper understanding of my routes in langgraph studio and i have attached screenshot for the same 
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/router_mywork.ipynb
 
+### Lesson 6 - Agent 
+n this lesson, I learned how to build a simple agent using multiple arithmetic tools following the ReAct architecture. I saw how the model thinks, calls the right tools, observes the results, and continues the process step by step to solve a multi-step arithmetic problem. This helped me understand how LangGraph allows the model to reason dynamically in a loop and decide when and how to use tools intelligently.
 
+*Refrence notebook* - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/agent.ipynb
+
+*My work* - Here i had done a lttle bit of twerking by modifieng my airthmatic calculator and added more function such as modulus and substraction and did the whole process again and trace the graph at lagsmith tracing .The model handled multi-step reasoning well, chaining tools as needed. and i have added screenshots for the same.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/agent_mywork.ipynb
 
 
