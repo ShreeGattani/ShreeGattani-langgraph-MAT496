@@ -33,3 +33,14 @@ In this lesson , i have leared a brief about building a simple chain that combin
 *My work* - Here i provided different questions and answers about space and i have added a tool calculator that can do 4 operations  addition , substraction , multiply , division  and tried asking the question for same . i have also used reducers so that messages can not be overriden and then finally i obsereved out graph and then some questions to the model in graph .
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/chain_mywork.ipynb
 
+### Lesson 5 - Router 
+In this lesson, I learned how the model can smartly decide when to use a tool and when to answer on its own. I tried adding a simple tool and saw how the LLM used it only for relevant questions while replying directly for others. This helped me understand how routing works and how the model balances its own reasoning with tool usage and i have attached the screenshot of the langgraph studio in the refrence notebook
+
+*Refrence notebook* - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/router.ipynb
+
+*My work* - Here i had done a lttle bit of twerking by modifieng my function to a power function which gives power and also did some changes in router.py in studio folder so that it gives me a proper understanding of my routes in langgraph studio and i have attached screenshot for the same 
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/router_mywork.ipynb
+
+
+
+
