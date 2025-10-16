@@ -20,3 +20,8 @@ In this lesson , I learned how to define state of the graph , what is node and d
  notebook. 
  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/simple_graph_mywork.ipynb
 
+### Lesson 3 - Langsmith Studio
+In this lesson , I learned how to visualize graph in langgraph studio which is an interactive IDE for building, visualizing, and debugging AI agent workflows and get familier with all the features provided by langgraph studio and then i had attached screenshots of what i observed in a refrence notebook .
+
+*Refrence notebook* - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/langsmith_studio.ipynb
+
