@@ -42,11 +42,18 @@ In this lesson, I learned how the model can smartly decide when to use a tool an
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/router_mywork.ipynb
 
 ### Lesson 6 - Agent 
-n this lesson, I learned how to build a simple agent using multiple arithmetic tools following the ReAct architecture. I saw how the model thinks, calls the right tools, observes the results, and continues the process step by step to solve a multi-step arithmetic problem. This helped me understand how LangGraph allows the model to reason dynamically in a loop and decide when and how to use tools intelligently.
+In this lesson, I learned how to build a simple agent using multiple arithmetic tools following the ReAct architecture. I saw how the model thinks, calls the right tools, observes the results, and continues the process step by step to solve a multi-step arithmetic problem. This helped me understand how LangGraph allows the model to reason dynamically in a loop and decide when and how to use tools intelligently.
 
 *Refrence notebook* - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/agent.ipynb
 
 *My work* - Here i had done a lttle bit of twerking by modifieng my airthmatic calculator and added more function such as modulus and substraction and did the whole process again and trace the graph at lagsmith tracing .The model handled multi-step reasoning well, chaining tools as needed. and i have added screenshots for the same.
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/agent_mywork.ipynb
 
+### Lesson 7 - Agent_Memory
+In this lesson, I learned how to add memory to agents using a thread ID that helps them remember previous interactions. This allowed the agent to answer follow-up questions with proper context and maintain continuity across multiple queries. I also discovered that LangGraph’s dev mode has a built-in persistence layer, which automatically manages memory and tracks past states without any manual setup.
+
+*Refrence notebook* - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/agent-memory.ipynb
+
+*My work* - Here I did a little bit of tweaking by extending my Airthmatic operation set and testing memory with a thread where the final question depended on earlier steps. The model successfully referenced previous results, showing memory retention works, and I also confirmed that LangGraph Studio’s built-in persistence layer handles memory automatically. I have added screenshots for the same.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/agent_memory_mywork.ipynb
 
