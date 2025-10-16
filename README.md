@@ -57,3 +57,5 @@ In this lesson, I learned how to add memory to agents using a thread ID that hel
 *My work* - Here I did a little bit of tweaking by extending my Airthmatic operation set and testing memory with a thread where the final question depended on earlier steps. The model successfully referenced previous results, showing memory retention works, and I also confirmed that LangGraph Studio’s built-in persistence layer handles memory automatically. I have added screenshots for the same.
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/agent_memory_mywork.ipynb
 
+### Lesson 8 - Deployment (optional)
+Here I didn’t implement anything since LangSmith Deployment is only available for Plus users and this lesson was optional. I just went through the video to understand the concept. I learned how to move beyond local development and deploy a LangGraph application as a service or API, including packaging the graph, managing secrets and environment variables, enabling persistence, and exposing graph endpoints for external use.
