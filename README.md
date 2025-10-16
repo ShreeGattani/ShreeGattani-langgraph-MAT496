@@ -25,3 +25,11 @@ In this lesson , I learned how to visualize graph in langgraph studio which is a
 
 *Refrence notebook* - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/langsmith_studio.ipynb
 
+### Lesson 4 - Chain
+In this lesson , i have leared a brief about building a simple chain that combines chat messages as our graph state , using chatmodels in graph nodes , binding tools to chatmodel and executing tool calls in graph nodes . I saw how Chat models can use messages which capture different roles within a conversation , using tools which is useful whenever you want model to interact with external system , about reducres and finally visualizing the graph.
+
+*Refrence notebook* - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/chain.ipynb
+
+*My work* - Here i provided different questions and answers about space and i have added a tool calculator that can do 4 operations  addition , substraction , multiply , division  and tried asking the question for same . i have also used reducers so that messages can not be overriden and then finally i obsereved out graph and then some questions to the model in graph .
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%201/chain_mywork.ipynb
+
