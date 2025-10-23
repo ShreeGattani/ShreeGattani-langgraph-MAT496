@@ -63,3 +63,15 @@ Here I didn’t implement anything since LangSmith Deployment is only available 
 # Module 2 State and memory
 The module’s main focus is on how to represent, maintain and manipulate the “state” of an agent or workflow built with LangGraph. The “state” refers to the structured data that captures what the agent knows / what has happened so far.
 
+### Lesson 1- State schema
+In this video, I learned that a schema defines the structure and data types used in a graph. We have been using TypedDict for this purpose and also explored dataclasses, which are similar but access values using the dot operator. Both TypedDict and dataclasses do not enforce type hints at runtime, allowing invalid data. To solve this, Pydantic is used as it provides automatic data validation.
+
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/state-schema.ipynb
+
+*My work* - I created a custom graph that determines whether the user intends to confirm or cancel an order using Pydantic for data validation. I then observed its behavior with both valid and invalid inputs.
+ 
+ https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/State_schema_mywork.ipynb
+ 
+
+
+
