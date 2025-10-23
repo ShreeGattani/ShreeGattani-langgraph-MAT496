@@ -59,3 +59,7 @@ https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%2
 
 ### Lesson 8 - Deployment (optional)
 Here I didn’t implement anything since LangSmith Deployment is only available for Plus users and this lesson was optional. I just went through the video to understand the concept. I learned how to move beyond local development and deploy a LangGraph application as a service or API, including packaging the graph, managing secrets and environment variables, enabling persistence, and exposing graph endpoints for external use.
+
+# Module 2 State and memory
+The module’s main focus is on how to represent, maintain and manipulate the “state” of an agent or workflow built with LangGraph. The “state” refers to the structured data that captures what the agent knows / what has happened so far.
+
