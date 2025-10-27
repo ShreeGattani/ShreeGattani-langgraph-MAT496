@@ -75,13 +75,20 @@ Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langg
  # Module 3 UX and human-in-the-loop
 
  ### Lesson 1 - Streaming
-In this video, I got a grasp of the concept of streaming. There are two kinds of streaming: streaming values and streaming updates. Streaming values allow for the complete state of the graph to be viewed after every node is invoked, while streaming updates merely show the changes to the state of the graph after each node is called. Furthermore, I discovered that it is possible to stream tokens as they are produced by the method .astream_events, which is responsible for emitting events that happen inside at the nodes. Each event is a dictionary that contains the event, the name, the data, and the metadata (which has langgraph_node). Also, I found out how to stream tokens with the help of the LangGraph API. In addition, the IDE was used to explore the LangGraph API application, which included the new streaming method messages that updates the final message token by token and provides the output. I have added screenshot for langgrapgh platform also 
+In this video, I got a grasp of the concept of streaming. There are two kinds of streaming: streaming values and streaming updates. Streaming values allow for the complete state of the graph to be viewed after every node is invoked, while streaming updates merely show the changes to the state of the graph after each node is called. Furthermore, I discovered that it is possible to stream tokens as they are produced by the method .astream_events, which is responsible for emitting events that happen inside at the nodes. Each event is a dictionary that contains the event, the name, the data, and the metadata (which has langgraph_node). Also, I found out how to stream tokens with the help of the LangGraph API. In addition, the IDE was used to explore the LangGraph API application, which included the new streaming method messages that updates the final message token by token and provides the output. I have added screenshot for langgrapgh platform also.
 
 Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/streaming-interruption.ipynb
 
 *My work*- In this notebook there was nothing much to do so i modified the examples and questions asked to chatbot such as Tell me about first world war and run all the steps above. I also done this in langgraph platform , you can see this in notebook given below 
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/streaming-interruption_mywork.ipynb
 
+### Lesson2 - Breakpoint
+In this notebook, we explored how LangGraph supports human-in-the-loop AI workflows through breakpoints. We learned to build a simple agent that can perform arithmetic operations, pause execution before using a tool, inspect its internal state, and then either resume or stop. This helped us understand how breakpoints facilitate approval, debugging, and state editing — essential for creating transparent and controllable AI systems. We also observed how LangGraph handles memory checkpoints, enabling an agent to pause and resume smoothly.
+
+Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/breakpoints.ipynb
+
+*My work*- I simply modified this agent to do more calculations and added more mathematical operations  and added more acurate statements to provide reasoning at each step
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/breakpoints_mywork.ipynb
  
 
 
