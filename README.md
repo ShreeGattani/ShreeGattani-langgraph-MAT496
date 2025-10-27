@@ -71,6 +71,17 @@ Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langg
 *My work* - I created a custom graph that determines whether the user intends to confirm or cancel an order using Pydantic for data validation. I then observed its behavior with both valid and invalid inputs.
  
  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/State_schema_mywork.ipynb
+
+ # Module 3 UX and human-in-the-loop
+
+ ### Lesson 1 - Streaming
+In this video, I got a grasp of the concept of streaming. There are two kinds of streaming: streaming values and streaming updates. Streaming values allow for the complete state of the graph to be viewed after every node is invoked, while streaming updates merely show the changes to the state of the graph after each node is called. Furthermore, I discovered that it is possible to stream tokens as they are produced by the method .astream_events, which is responsible for emitting events that happen inside at the nodes. Each event is a dictionary that contains the event, the name, the data, and the metadata (which has langgraph_node). Also, I found out how to stream tokens with the help of the LangGraph API. In addition, the IDE was used to explore the LangGraph API application, which included the new streaming method messages that updates the final message token by token and provides the output. I have added screenshot for langgrapgh platform also 
+
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/streaming-interruption.ipynb
+
+*My work*- In this notebook there was nothing much to do so i modified the examples and questions asked to chatbot such as Tell me about first world war and run all the steps above. I also done this in langgraph platform , you can see this in notebook given below 
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/streaming-interruption_mywork.ipynb
+
  
 
 
