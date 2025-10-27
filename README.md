@@ -82,14 +82,22 @@ Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langg
 *My work*- In this notebook there was nothing much to do so i modified the examples and questions asked to chatbot such as Tell me about first world war and run all the steps above. I also done this in langgraph platform , you can see this in notebook given below 
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/streaming-interruption_mywork.ipynb
 
-### Lesson2 - Breakpoint
+### Lesson 2 - Breakpoint
 In this notebook, we explored how LangGraph supports human-in-the-loop AI workflows through breakpoints. We learned to build a simple agent that can perform arithmetic operations, pause execution before using a tool, inspect its internal state, and then either resume or stop. This helped us understand how breakpoints facilitate approval, debugging, and state editing — essential for creating transparent and controllable AI systems. We also observed how LangGraph handles memory checkpoints, enabling an agent to pause and resume smoothly.
 
 Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/breakpoints.ipynb
 
 *My work*- I simply modified this agent to do more calculations and added more mathematical operations  and added more acurate statements to provide reasoning at each step
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/breakpoints_mywork.ipynb
- 
+
+### Lesson 3  - Editing state and human feedback
+In this video, I learned how to edit the graph state after an interruption in the flow. Breakpoints allow modifying the graph’s state through the default “add_message” reducer. I explored adding interrupts in LangGraph Studio and editing the graph state via the LangGraph API. Lastly, I learned to use a dummy node with the “as_node” field to inject user input dynamically into the graph.
+
+Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/edit-state-human-feedback.ipynb
+
+*My work* - In this example, I added more mathematical tools like subtract and divide. I also included tools for motivation and focus.I interrupted and changed the state of the graph using both hardcoded values and user input. Additionally, I modified the graph’s state using the LangGraph API. and i have visualized it in lagsmith studio. 
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/edit_state_human_feedback_mywork.ipynb
+(attached screentshot too)
 
 
 
