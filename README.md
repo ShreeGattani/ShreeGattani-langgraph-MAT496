@@ -99,5 +99,13 @@ Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-lang
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/edit_state_human_feedback_mywork.ipynb
 (attached screentshot too)
 
+### Lessson 4 - Dynamic Breakpoints
+In this video, I learned that we can create dynamic breakpoints that allow the graph to interrupt itself automatically based on a condition in its state. This acts like an internal pause trigger without needing manual intervention. We use NodeInterrupt to achieve this. However, to continue execution, we must update the state, or else the graph will keep pausing at the same point repeatedly.
+
+Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/dynamic-breakpoints.ipynb (by mistakenly i have written video 3 in commit)
+
+*My work* - I modified it so that the graph now pauses dynamically after a certain number of steps, by using a step_count value inside the graph state. When step_count reached the set threshold, the graph interrupted itself. To resume execution, I reset the step_count and updated the state before calling graph.stream() again.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/dynamic_breakpoints_mywork.ipynb
+
 
 
