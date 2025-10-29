@@ -107,5 +107,13 @@ Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-lang
 *My work* - I modified it so that the graph now pauses dynamically after a certain number of steps, by using a step_count value inside the graph state. When step_count reached the set threshold, the graph interrupted itself. To resume execution, I reset the step_count and updated the state before calling graph.stream() again.
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/dynamic_breakpoints_mywork.ipynb
 
+### Lesson 5 - Time travel 
+In this video, I learned that Time Travel in LangGraph allows us to go back to a previous state of the graph, re-run nodes, or modify inputs before continuing execution. It works like debugging in reverse, where we can rewind and replay parts of the workflow instead of only stopping at a breakpoint. This helps in re-running inputs for better results or changing parts of the state and continuing, which is useful for debugging, testing variations, and improving responses without starting over. I have attached screenshot too
+
+Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/time-travel.ipynb
+
+*My work* - In this notebook, I experimented with time travel by restoring the graph to a previous checkpoint and re-running it to observe how the state changes. I also added a logarithm function and re-ran the graph to see how modifying the state affects the final output, which helped me understand how time travel supports easy debugging and experimentation.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/time_travel_mywork.ipynb
+
 
 
