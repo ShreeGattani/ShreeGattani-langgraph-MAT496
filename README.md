@@ -115,5 +115,17 @@ Refrence notebook(modified) -  https://github.com/ShreeGattani/ShreeGattani-lang
 *My work* - In this notebook, I experimented with time travel by restoring the graph to a previous checkpoint and re-running it to observe how the state changes. I also added a logarithm function and re-ran the graph to see how modifying the state affects the final output, which helped me understand how time travel supports easy debugging and experimentation.
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%203/time_travel_mywork.ipynb
 
+# Module 3 Building your assistant 
+
+ ### Lesson 1 - Parallization
+ In the video, I discovered the ideas of fanning out and fanning in during the parallel execution of steps in a LangGraph workflow. In case multiple nodes are running concurrently and writing to the same state channel, it is necessary to use a suitable reducer to merge their updates correctly; otherwise, there will be conflicts as many nodes are modifying the same value at once. Moreover, I discovered how we can alter the order of the aforementioned parallel updates by devising our own reducer logic which will then govern the combination of the state. In conclusion, we utilized these concepts to create a web search agent and got access to the graph via both the LangGraph API and LangGraph Studio. I have attached screentshots too 
+
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/parallelization.ipynb
+
+*My work* - I have executed a graph where three interconnected nodes are operating in parallel via reducers. The initial node finds the latest online news articles about the company and reformats them. The optional second node collects background information from Wikipedia. Given that both nodes share the same context key for output, a reducer is employed to combine their results without any overlapping. To conclude, the third node, with the help of a large language model (LLM), creates an Investor Brief by fusing the new insights and old ones and presenting the developments and possibilities of the company in a brief and clear manner which uses concept of parallization vey well
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/parallelization_mywork.ipynb
+
+ 
+ 
 
 
