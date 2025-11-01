@@ -126,7 +126,7 @@ Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langg
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/parallelization_mywork.ipynb
 
 ### Lesson 2 - Sub-graphs
-In this video, what I discovered was that sub-graphs provide a way of keeping independent states in various sections of a considerable graph, which is quite handy in multi-agent environments. They communicate with the parent graph via shared keys, so inputs such as cleaned_logs can be transferred into several sub-graphs, and outputs such as summary or report can be sent back to the parent. By creating output state schemas, we can prevent key conflicts and precisely state the data that each sub-graph makes available. Besides, sub-graphs are capable of working simultaneously, and tools like LangSmith come to aid in maintaining a clear and well-organized tracing even if the graph is large
+In this video, what I discovered was that sub-graphs provide a way of keeping independent states in various sections of a considerable graph, which is quite handy in multi-agent environments. They communicate with the parent graph via shared keys, so inputs such as cleaned_logs can be transferred into several sub-graphs, and outputs such as summary or report can be sent back to the parent. By creating output state schemas, we can prevent key conflicts and precisely state the data that each sub-graph makes available. Besides, sub-graphs are capable of working simultaneously, and tools like LangSmith come to aid in maintaining a clear and well-organized tracing even if the graph is large. i have attached screenshots of langsmith tracing and langsmith studio
 
 Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph.ipynb
 
@@ -136,15 +136,16 @@ https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%2
 
 
 ### Lesson 3 - Map-reduce
+In this video , I discovered that MapReduce divides a big job into smaller parts that can be executed simultaneously and at the same time, combines their outputs in an efficient manner. The Map phase can for instance, generate jokes on a topic through the creation of parallel nodes utilizing the Send API, while the Reduce phase puts together those outputs and picks the best one. I also realized the role of structured outputs in maintaining clarity and organization throughout the process. To sum it up, this opened my eyes to the fact that MapReduce is the backbone of LangGraph's scalable, well-structured, and efficient workflows. I have attached the screenshots for same.
 
 
-Refrence notebook(modified) - 
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph.ipynb
 
 *My work* - 
-
+We converted the original joke generator into a Fun Fact Generator. In the Map phase, fun facts are produced for each subtopic, and in the Reduce phase, the most interesting one is chosen. All prompts, variable names, and output fields were adjusted to match the new theme, while still preserving the same map-reduce workflow and parallel execution pattern.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph-mywork.ipynb
 
 ### Lesson 4 - Research-assistant
-
 
 Refrence notebook(modified) -
 
