@@ -130,27 +130,26 @@ In this video, what I discovered was that sub-graphs provide a way of keeping in
 
 Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph.ipynb
 
-*My work* - 
-I updated the original log analysis into a Product Review Analyzer, renaming the sub-graphs to ProductReviewAnalysis and TopicSummarization. I separated their output schemas to avoid key conflicts, while still showing parallel execution and shared state through cleaned_feedback. The parent graph then combines the results, demonstrating coordinated multi-agent behavior
+*My work* - I updated the original log analysis into a Product Review Analyzer, renaming the sub-graphs to ProductReviewAnalysis and TopicSummarization. I separated their output schemas to avoid key conflicts, while still showing parallel execution and shared state through cleaned_feedback. The parent graph then combines the results, demonstrating coordinated multi-agent behavior
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph-mywork.ipynb
 
 
 ### Lesson 3 - Map-reduce
 In this video , I discovered that MapReduce divides a big job into smaller parts that can be executed simultaneously and at the same time, combines their outputs in an efficient manner. The Map phase can for instance, generate jokes on a topic through the creation of parallel nodes utilizing the Send API, while the Reduce phase puts together those outputs and picks the best one. I also realized the role of structured outputs in maintaining clarity and organization throughout the process. To sum it up, this opened my eyes to the fact that MapReduce is the backbone of LangGraph's scalable, well-structured, and efficient workflows. I have attached the screenshots for same.
 
-
 Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph.ipynb
 
-*My work* - 
-We converted the original joke generator into a Fun Fact Generator. In the Map phase, fun facts are produced for each subtopic, and in the Reduce phase, the most interesting one is chosen. All prompts, variable names, and output fields were adjusted to match the new theme, while still preserving the same map-reduce workflow and parallel execution pattern.
+*My work* - We converted the original joke generator into a Fun Fact Generator. In the Map phase, fun facts are produced for each subtopic, and in the Reduce phase, the most interesting one is chosen. All prompts, variable names, and output fields were adjusted to match the new theme, while still preserving the same map-reduce workflow and parallel execution pattern.
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph-mywork.ipynb
 
 ### Lesson 4 - Research-assistant
+In this video , I learned to construct a multi-agent AI setup for research that simulates a human analyst's workflow, to make customized AI agents, and to keep modifying their attention through human input. It showed how to set up interviews among these agents and an AI specialist who has access to outside information in a structured manner. I witnessed the use of MapReduce to run research tasks in parallel, with the results being automatically gathered and integrated into a comprehensive final report. It all pointed out that human participation, organized prompts, and executed workflows could help in speeding up, improving accuracy, and simplifying the management of AI-supported research. and i have attached screenshots for both langgraph studio and langsmith tracing .
 
-Refrence notebook(modified) -
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/research-assistant.ipynb
 
 *My work* - 
-
+I have done all the steps provided in refrences but build my own ***entrepreneurship model*** with Startup Founding & Growth Roles and saw the tracing in langsmith academy .
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/research_assistant_mywork.ipynb
 
  
  
