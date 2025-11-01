@@ -125,6 +125,32 @@ Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langg
 *My work* - I have executed a graph where three interconnected nodes are operating in parallel via reducers. The initial node finds the latest online news articles about the company and reformats them. The optional second node collects background information from Wikipedia. Given that both nodes share the same context key for output, a reducer is employed to combine their results without any overlapping. To conclude, the third node, with the help of a large language model (LLM), creates an Investor Brief by fusing the new insights and old ones and presenting the developments and possibilities of the company in a brief and clear manner which uses concept of parallization vey well
 https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/parallelization_mywork.ipynb
 
+### Lesson 2 - Sub-graphs
+In this video, what I discovered was that sub-graphs provide a way of keeping independent states in various sections of a considerable graph, which is quite handy in multi-agent environments. They communicate with the parent graph via shared keys, so inputs such as cleaned_logs can be transferred into several sub-graphs, and outputs such as summary or report can be sent back to the parent. By creating output state schemas, we can prevent key conflicts and precisely state the data that each sub-graph makes available. Besides, sub-graphs are capable of working simultaneously, and tools like LangSmith come to aid in maintaining a clear and well-organized tracing even if the graph is large
+
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph.ipynb
+
+*My work* - 
+I updated the original log analysis into a Product Review Analyzer, renaming the sub-graphs to ProductReviewAnalysis and TopicSummarization. I separated their output schemas to avoid key conflicts, while still showing parallel execution and shared state through cleaned_feedback. The parent graph then combines the results, demonstrating coordinated multi-agent behavior
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%204/sub-graph-mywork.ipynb
+
+
+### Lesson 3 - Map-reduce
+
+
+Refrence notebook(modified) - 
+
+*My work* - 
+
+
+### Lesson 4 - Research-assistant
+
+
+Refrence notebook(modified) -
+
+*My work* - 
+
+
  
  
 
