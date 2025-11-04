@@ -69,8 +69,51 @@ In this video, I learned that a schema defines the structure and data types used
 Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/state-schema.ipynb
 
 *My work* - I created a custom graph that determines whether the user intends to confirm or cancel an order using Pydantic for data validation. I then observed its behavior with both valid and invalid inputs.
- 
  https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/State_schema_mywork.ipynb
+
+### Lesson 2: State Reducers
+In this video, we explored state reducers, which define how state updates are applied to specific keys or channels in the schema. I learned that when we try to update a shared state across two nodes simultaneously, Python raises a value error. To resolve this, we use state reducers. We handled this using `Annotated`. In some scenarios, built-in reducers are not sufficient, especially in edge cases like handling `null`, so we may need to define custom reducers. I also learned about message state reducers and the `add_reducer` method. We saw how to add new messages, overwrite messages using their IDs, and delete messages using the built-in `RemoveMessage` reducer.
+
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/state-reducers.ipynb
+
+*My work* -I experimented with the built-in message reducers provided by LangGraph using different examples. I also created a custom reducer and a graph that adds 4, 6, and 7 at each node. Then, I ran several test cases to verify that the custom reducers were functioning correctly.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/state-reducers-mywork.ipynb
+
+### Lesson 3: Multiple Schemas
+In this video, I learned that while most graphs use a single schema for input and output, there are situations where we require more control. Sometimes internal nodes return information that is not relevant to the final output and should not be visible to the user. To handle this, we use *private state*. This is especially useful when certain intermediate values are needed internally for processing but are not part of the final API. I also learned that `StateGraph` internally uses a single schema for communication, but we can still define separate input and output schemas while maintaining a richer internal schema.
+
+Refrence notebook(modified) - https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/multiple-schemas.ipynb
+
+*My work* -  I created a graph that converts Celsius to Fahrenheit using private schemas for internal communication. I also built another graph with distinct input and output schemas that handles user travel destinations, retrieves destination information, and generates a final response message for the user.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/multiple-schemas-mywork.ipynb
+
+
+### Lesson 4: Trim and Filter Messages
+In this video, I learned about managing message history efficiently in long-running conversations. When many messages accumulate in a chat system, it can lead to higher token usage and slower response times. To handle this, we can either remove older messages entirely using tools like RemoveMessages or selectively pass only a filtered subset of messages to the LLM. Another useful strategy is trimming, where we limit the number of tokens included from the past conversation. These techniques help reduce computation cost while keeping the conversation context relevant.
+
+Reference notebook (modified) – https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/trim-filter-messages.ipynb
+
+*My work* – I built a simple chatbot that manages conversation history by trimming messages instead of deleting them. The chatbot preserves the full chat log but only sends the most recent messages to the model using trim_messages. This helps lower token usage and improves efficiency while still maintaining context continuity in the conversation.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/trim-filter-messages-mywork.ipynb
+
+### Lesson 5: Chatbot with Summarizing Messages and Memory
+In this video, I learned how to create a chatbot that automatically summarizes earlier parts of a conversation once the total message count becomes large. This helps reduce the amount of context passed to the LLM, lowering token usage while retaining the essential information. I also learned to use a checkpointer to save graph state after each step, allowing the chatbot to resume conversations even after interruptions. This makes the chatbot more efficient and practical for long, ongoing interactions.
+
+Reference notebook (modified) – https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/chatbot-summarization-mywork.ipynb
+
+*My work* – I customized this chatbot into a personal study assistant. The chatbot helps maintain a smooth conversation about study topics by summarizing older discussion points and keeping only the most recent two messages for context. This keeps the conversation focused and reduces token cost. I also enabled persistent memory using MemorySaver, so the study assistant can remember previous sessions. Additionally, I explored how the conversation state is tracked in LangSmith Studio and included screenshots showing how summaries and memory updates are stored.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/chatbot-summarization-mywork.ipynb
+
+*** I have attached screenshots in all notebooks for refrence in tracing ***
+
+
+### Lesson 6: Chatbot with External Memory
+In this video, I learned that LangGraph supports not only in-memory checkpointing but also external memory storage options such as PostgreSQL and SQLite. While in-memory checkpoints persist only during the active notebook session, external databases store conversation state permanently. We verified this by restarting the environment and seeing that the previous conversation context was still available. Additionally, when working in LangGraph Studio, a PostgreSQL persistence layer is automatically provided, making long-term memory seamless and reliable
+
+Reference notebook (modified) – https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/chatbot-external-memory.ipynb
+
+*My work* – I extended my personal study assistant chatbot by linking its memory to a local SQLite database to enable persistent conversation storage. After connecting the memory system, I tested it by restarting the notebook to confirm that the assistant still retained previous study discussions. I also experimented with the chatbot inside LangGraph Studio, where I observed the automatically configured persistence layer. I verified memory retention by restarting the session, and I included screenshots in the notebook showing how the conversation state was maintained.
+https://github.com/ShreeGattani/ShreeGattani-langgraph-MAT496/blob/main/Module%202/chatbot-external-memory-mywork.ipynb
 
  # Module 3 UX and human-in-the-loop
 
